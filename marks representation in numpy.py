@@ -1,0 +1,16 @@
+import numpy as np
+marks=np.array([93,84,82,83,77,95])
+subjects=np.array(['Tamil','English','Maths','Physics','Chemistry','Computer Science'])
+print(marks,subjects)
+mark=np.stack((subjects,marks),axis=1)
+print("Marks :\n",mark)
+total=np.sum(marks)
+print("Total Marks :",total)
+n=marks.size
+print("Average Mark:",total/n)
+avg=np.mean(marks)
+high=np.max(marks)
+low=np.min(marks)
+print("Average Mark :",avg)
+print("Highest Mark :",high)
+print("Lowest Mark :",low)
